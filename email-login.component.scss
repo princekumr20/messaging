@@ -1,0 +1,35 @@
+.centeredEmailLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    button{
+        margin-left:7%;
+        width:24%;
+        margin-top:20px;
+    }
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+
+    label{
+        width:50px;
+        padding: 20px;;
+    }
+}
+
+.input {
+    &-email {
+        padding: 10px 80px;
+
+    }
+
+    &-password {
+        padding: 10px 80px;
+    }
+}

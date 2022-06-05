@@ -1,0 +1,24 @@
+<div class="centeredEmailLogin">
+    <h1>Login with email</h1>
+    <div class="inputDiv">
+        <label>Email: </label>
+        <input name="message" [(ngModel)]="email" placeholder="Enter email" type="text" class="input-email">
+    </div>
+
+
+    <div class="inputDiv">
+        <label>Password: </label>
+        <input name="message" [(ngModel)]="password" placeholder="Enter password" type="password" class="input-password">
+    </div>
+
+    <div>
+        <span *ngIf="emailAlreadyExist">Email already exsist</span>
+    </div>
+
+    <button mat-raised-button color="accent" (click)="loginWithEmailAndPassword()">Submit</button>
+
+    <button mat-raised-button (click)="goBack()">
+        <mat-icon>fast_rewind</mat-icon> Go Back
+    </button>
+
+</div>
